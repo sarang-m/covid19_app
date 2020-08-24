@@ -9,13 +9,11 @@ class MyClipper extends CustomClipper<Path> {
     path.lineTo(size.width, 0);
     path.close();
     return path;
-    throw UnimplementedError();
   }
 
   @override
   bool shouldReclip(CustomClipper<Path> oldClipper) {
-    // TODO: implement shouldReclip
-    throw UnimplementedError();
+    return true;
   }
 
 }
