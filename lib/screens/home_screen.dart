@@ -1,5 +1,6 @@
 import 'package:covid19/constants/constants.dart';
 import 'package:covid19/utils/screen_size.dart';
+import 'package:covid19/widgets/covid_status.dart';
 import 'package:covid19/widgets/custom_clipper.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -145,11 +146,42 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),],
                     ),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-
+                        CovidStatus(iconColor: KInfectedColor,
+                          covidNumber: "1014",statusText: "Infected",),
+                        CovidStatus(iconColor: KDeathColor,
+                          covidNumber: 12,statusText: "Death",),
+                        CovidStatus(iconColor: KRecoverColor,covidNumber: "213",
+                          statusText: "Recovered",)
                       ],
                     ),
                   ),
+                  SizedBox(height: 2,),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text("Spread of virus",style: KTitleTextStyle,),
+                    ],
+                  ),
+                  SizedBox(height: SizeConfig.safeBlockVertical*.5,),
+                  Container(
+                    padding: EdgeInsets.all(5),
+                    height: SizeConfig.safeBlockVertical*17,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8),
+                      color: Colors.white,
+                      boxShadow: [BoxShadow(
+                        offset: Offset(0,10),
+                        blurRadius: 30,
+                        color: KShadowColor
+                      )]
+                    ),
+                    child: Image.asset("assets/images/map.png",
+                      fit: BoxFit.contain,),
+
+                  )
                 ],
               ),
             )
@@ -159,3 +191,5 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
+
+
