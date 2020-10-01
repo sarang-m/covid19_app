@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         textTheme: TextTheme(
           bodyText2: TextStyle(color: KBodyTextColor),
         ),
-      ),
+      ).,
       home: HomeScreen(),
     );
   }
