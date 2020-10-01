@@ -84,7 +84,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 borderRadius:BorderRadius.circular(10),),
               child: Row(children: [
                 SvgPicture.asset("assets/icons/maps-and-flags.svg"),
-                SizedBox(width: 10,),
+                SizedBox(width: 11,),
                 Expanded(
                   child: DropdownButton<String>(
                     isExpanded: true,
@@ -108,7 +108,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 )
               ],),
             ),
-            SizedBox(height: 20,),
+            SizedBox(height: 21,),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 20),
               child: Column(

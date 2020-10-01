@@ -10,19 +10,19 @@ const KInfectedColor = Color(0xFFFF8748);
 const KDeathColor = Color(0xFFFF4838);
 const KRecoverColor = Color(0xFF36C12C);
 const KPrimaryColor = Color(0xFF3382CC);
-final KShadowColor = Color(0xFFB7B7B7).withOpacity(.16);
-final KActiveShadowColor = Color(0xFF4056C6).withOpacity(15);
+final KShadowColor = Color(0xFFB7B7B7).withOpacity(.15);
+final KActiveShadowColor = Color(0xFF4056C6).withOpacity(16);
 
 //Text Style
 final KHeadingTextStyle = TextStyle(
-    fontSize:SizeConfig.safeBlockHorizontal*5,
+    fontSize:SizeConfig.safeBlockHorizontal*6,
     fontWeight: FontWeight.w600);
 
 const KSubTextStyle = TextStyle(
-    fontSize: 16,
+    fontSize: 17,
     color: KTextLightColor);
 
 const KTitleTextStyle = TextStyle(
-    fontSize: 18,
+    fontSize: 19,
     color: KTitleTextColor,
     fontWeight: FontWeight.bold);
